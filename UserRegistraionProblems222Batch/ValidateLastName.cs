@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace UserRegistraionProblems222Batch
 {
-    public class ValidateFirstName
+    public class ValidateLastName
     {
-        public static void Validate()                       //ststic method for validating first name
+        public static void Validate()
         {
-            Console.WriteLine("Enter First Name");
+            Console.WriteLine("Enter Last Name");
             string fName = Console.ReadLine();
-            string regex = "^[A-Z]{1}[a-zA-z]{2,}$";        //regex pattern
-            bool result=Regex.IsMatch(fName, regex);
+            string regex = "^[A-Z]{1}[a-zA-z]{2,}$";           //regex pattern
+            bool result = Regex.IsMatch(fName, regex);
             Console.WriteLine(result);
         }
     }
