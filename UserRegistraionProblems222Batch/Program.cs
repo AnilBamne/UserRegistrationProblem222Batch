@@ -19,6 +19,7 @@ namespace UserRegistraionProblems222Batch
                     ValidateLastName.Validate();
                     break;
                 case 3:
+                    ValidateEmail.Validate();
                     break;
                 case 4:
                     break;
