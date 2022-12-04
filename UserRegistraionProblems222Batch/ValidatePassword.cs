@@ -17,5 +17,13 @@ namespace UserRegistraionProblems222Batch
             bool result = Regex.IsMatch(password, regex);
             Console.WriteLine(result);
         }
+        public static void Rule2()                       //Rule 2: Password should atleast 1 Upper case
+        {
+            Console.WriteLine("Enter the password");
+            string password = Console.ReadLine();
+            string regex = "^(?=.*[A-Z]).{8}";        //regex pattern
+            bool result = Regex.IsMatch(password, regex);
+            Console.WriteLine(result);
+        }
     }
 }
