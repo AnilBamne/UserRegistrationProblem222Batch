@@ -30,6 +30,15 @@ namespace UserRegistraionProblems222Batch
                 case 6:
                     ValidatePassword.Rule2();
                     break;
+                case 7:
+                    ValidatePassword.Rule3();
+                    break;
+                case 8:
+                    break;
+                case 9:
+                    break;
+                case 10:
+                    break;
                 default:
                     break;
             }
