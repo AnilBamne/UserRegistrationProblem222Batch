@@ -8,7 +8,8 @@ namespace UserRegistraionProblems222Batch
         {
             Console.WriteLine("Welcome to User Registration Problems using Regex");
             runAgain:
-            Console.WriteLine("\nChoose UC to execute\n1:Validate first name\n2:Validate last name\n3:Validate Email\n4:Validate Mobile Number\n5:Password rule1\n6:Password rule2\n7:Password rule3\n");
+            Console.WriteLine("\nChoose UC to execute\n1:Validate first name\n2:Validate last name\n3:Validate Email\n4:Validate Mobile Number\n5:Password rule1\n6:Password rule2\n7:Password rule3\n" +
+                "8:Password rule4\n9:Email samples\n");
             int option=int.Parse(Console.ReadLine());
             switch (option)
             {
@@ -34,6 +35,7 @@ namespace UserRegistraionProblems222Batch
                     ValidatePassword.Rule3();
                     break;
                 case 8:
+                    ValidatePassword.Rule4();
                     break;
                 case 9:
                     break;

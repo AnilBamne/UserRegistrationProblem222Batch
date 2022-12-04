@@ -25,11 +25,19 @@ namespace UserRegistraionProblems222Batch
             bool result = Regex.IsMatch(password, regex);
             Console.WriteLine(result);
         }
-        public static void Rule3()                       //Rule 2: Password should atleast 1 Numeric number
+        public static void Rule3()                       //Rule 3: Password should atleast 1 Numeric number
         {
             Console.WriteLine("Enter the password");
             string password = Console.ReadLine();
-            string regex = "^(?=.*[0-9]).{8}";        //regex pattern
+            string regex = "^(?=.*[A-Z])(?=.*[0-9]).{8}";        //regex pattern
+            bool result = Regex.IsMatch(password, regex);
+            Console.WriteLine(result);
+        }
+        public static void Rule4()                       //Rule 4: Password should have exactly 1 special charecter
+        {
+            Console.WriteLine("Enter the password");
+            string password = Console.ReadLine();
+            string regex = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]{1}).{8}";        //regex pattern
             bool result = Regex.IsMatch(password, regex);
             Console.WriteLine(result);
         }
