@@ -38,6 +38,7 @@ namespace UserRegistraionProblems222Batch
                     ValidatePassword.Rule4();
                     break;
                 case 9:
+                    ValidateEmail.EmailSamples();
                     break;
                 case 10:
                     break;
